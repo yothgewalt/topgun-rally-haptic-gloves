@@ -33,7 +33,7 @@ void setup() {
     while (!client.connected()) {
         Serial.println("[M5Stack] Attempting MQTT broker connection...");
  
-        if (client.connect("hardware_8ad968f8", "nothing", "nothing1413")) {
+        if (client.connect("hardware_8ad968f8")) {
         Serial.println("[M5Stack] MQTT broker has been connected.");
  
         } else {
